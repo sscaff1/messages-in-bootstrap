@@ -23,7 +23,7 @@
   pointer-events: auto;
 }
 
-.message {
+.messages {
   position: fixed;
   z-index: 10000;
   padding: 10px;

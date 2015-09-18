@@ -1,6 +1,6 @@
 Package.describe({
   name: 'sscaff1:messages',
-  version: '0.0.2',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'A simple package to display success and error messages to the user',
   // URL to the Git repository containing the source code for this package.
@@ -13,13 +13,14 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
 
-  api.use('mongo');
   api.use([
-    'twbs:bootstrap@3.3.5',
+    'minimongo',
+    'mongo-livedata',
     'templating'
   ], 'client');
 
   api.addFiles([
+    'messages.js',
     'message_list.css',
     'message_list.html',
     'message_list.js',

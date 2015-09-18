@@ -12,18 +12,7 @@
   100% {opacity: 0;}
 }
 
-.bootstrap-alerts {
-  position: fixed;
-  z-index: 10000;
-  padding: 10px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-}
-
-.bootstrap-alert {
+.alert {
   animation: fadeOut 2700ms ease-in 0s 1 forwards;
   -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
   -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
@@ -32,4 +21,15 @@
   clear: both;
   margin-bottom: 5px;
   pointer-events: auto;
+}
+
+.message {
+  position: fixed;
+  z-index: 10000;
+  padding: 10px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  pointer-events: none;
 }

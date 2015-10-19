@@ -14,7 +14,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
 
   api.use([
-    'twbs:bootstrap',
+    'twbs:bootstrap@3.3.5',
     'minimongo',
     'mongo-livedata',
     'templating'
